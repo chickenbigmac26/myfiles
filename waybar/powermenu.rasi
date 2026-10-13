@@ -1,0 +1,46 @@
+configuration {
+    show-icons: false;
+}
+
+* {
+    background-color: #000000;
+    text-color:       #ffffff;
+    font:             "JetBrainsMono Nerd Font 10";
+}
+
+window {
+    /* Location 3 = Top Right corner in Rofi */
+    location:       north east; 
+    
+    /* Offsets: Adjust Y to sit right below your bar, X for right edge spacing */
+    x-offset:       0px;
+    y-offset:       0px; 
+    
+    width:          82px;
+    border:         0px;
+    border-color:   #000000;
+    border-radius:  0px;
+    padding:        1px;
+}
+
+mainbox {
+    children: [ listview ];
+}
+
+listview {
+    lines:          3;
+    columns:        1;
+    spacing:        0px;
+    cycle:          true;
+    dynamic:        true;
+}
+
+element {
+    padding:        1px 1px;
+    border-radius:  0px;
+}
+
+element selected {
+    background-color: #999290;
+    text-color:       #A1A1A1;
+}
